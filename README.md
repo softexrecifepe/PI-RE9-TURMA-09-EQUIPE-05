@@ -29,7 +29,11 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 
 ## Tecnologias Utilizadas
 
-- [Inserir tecnologias e ferramentas utilizadas no projeto]
+- HTML5
+- CSS
+- JavaScript
+- TypeScript
+- React
 
 ## Como Contribuir
 
@@ -39,13 +43,10 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 4. Envie para a branch principal (`git push origin feature/nova-funcionalidade`)
 5. Abra um Pull Request
 
-## Licença
-
-[Especificar a licença, caso tenha uma]
-
 ---
 
 **Nota**: Este projeto visa melhorar o processo de recrutamento ao conectar empregadores e trabalhadores de forma geolocalizada, otimizando a produtividade e a eficiência.
+
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
