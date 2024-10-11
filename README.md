@@ -1,4 +1,5 @@
-# Sistema de Recrutamento Geolocalizado
+# Empregue
+### Sistema de Recrutamento Geolocalizado
 
 ## Descrição
 
@@ -33,7 +34,6 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 - CSS
 - JavaScript
 - TypeScript
-- React
 
 ## Como Contribuir
 
