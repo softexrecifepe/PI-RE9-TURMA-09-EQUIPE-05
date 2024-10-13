@@ -1,0 +1,63 @@
+/*CSS Container Home*/
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container img {
+    height: 300px;
+}
+
+.container h2 {
+    color: var(--aqua);
+}
+
+.container p {
+    color: var(--secondary);
+    text-align: justify;
+}
+
+.apresentacao {
+    padding: 20px;
+    width: 50%;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid var(--aqua);
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: var(--secondary);
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: var(--aqua);
+    box-shadow: 0 0 20px #00ffea, 0 0 40px #00ffea, 0 0 60px #00ffea;
+    color: var(--primary);
+}
+
+@media (max-width: 799px) {
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .apresentacao {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .container img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
