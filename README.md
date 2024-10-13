@@ -1,5 +1,5 @@
 # Empregue
-### ![Ícone de Localização](https://via.placeholder.com/20/FF0000/FFFFFF?text=📍) Sistema de Recrutamento Geolocalizado
+### ![Ícone de Localização](https://img.icons8.com/ios-filled/20/FF0000/marker.png) Sistema de Recrutamento Geolocalizado
 ### Sistema de Recrutamento Geolocalizado
 
 ## Descrição
