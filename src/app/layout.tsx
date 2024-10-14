@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import {Open_Sans} from 'next/font/google';
 
-
+const mainFontFamily = Open_Sans({
+  weight: ['300', '400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+  variable: '--font-family-main',
+});
 
 export const metadata: Metadata = {
   title: "Empregue",
@@ -14,12 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <body
-
-      >
-        {children}
-      </body>
+    <html lang="pt-br" className={mainFontFamily.variable}>
+      <head>
+      
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

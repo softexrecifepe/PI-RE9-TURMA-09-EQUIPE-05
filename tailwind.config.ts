@@ -8,9 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-family-main)']
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: '#Ad0006',
+        secondary: '#FF0009',
+        terceary: '#Ff6166' ,
+        headerIcons:'#666666',
+        fonts: '#6c6c6c'
       },
     },
   },

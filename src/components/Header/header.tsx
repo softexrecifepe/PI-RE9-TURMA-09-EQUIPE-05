@@ -1,12 +1,12 @@
-export default function Header () {
+export default function Header(){
     return (
-        <header>
-            <span className="w-full h-20 bg-red-600">Empregue</span>
+        <header className="w-full h-16 bg-secondary flex items-center justify-around">
+            <span className="text-2xl font-bold">Empregue</span>
             <nav>
-                <a href="#">texto 1</a>
-                <a href="#">texto 2</a>
-                <a href="#">texto 3</a>
-                <a href="#">texto 4</a>
+                <a href="#" className="px-6 hover:bg-terceary">Home</a>
+                <a href="#" className="px-6 hover:bg-terceary">Sobre</a>
+                <a href="#" className="px-6 hover:bg-terceary">Cadastre-se</a>
+                <a href="#" className="px-6 hover:bg-terceary">Contato</a>
             </nav>
         </header>
     )

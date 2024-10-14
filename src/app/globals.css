@@ -1,20 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-  font-family: 'Open Sans';
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 
-  --primary: #Ad0006;
-  --secondary: rgb(220 38 38);
-  --terceary: #Ff6166;
-  --header:#666666;
-  --font: #6c6c6c;
 }
-
