@@ -1,33 +1,3 @@
-# Empregue
-### ![Ícone de Localização](https://img.icons8.com/ios-filled/20/FF0000/marker.png) Sistema de Recrutamento Geolocalizado
-
-## Descrição
-
-A aplicação tem como objetivo primordial disponibilizar aos usuários a possibilidade de contratar profissionais que residem próximos às vagas ofertadas, favorecendo tanto o trabalhador quanto o empregador, tendo em vista a economia de tempo e dinheiro. 
-
-É sabido que funcionários que moram próximos ao trabalho têm mais tempo para descanso e, assim, tendem a ser mais produtivos.
-
-## Funcionalidades
-
-- Cadastrar usuários e ofertas
-- Recuperar senha
-- Atualizar dados
-- Excluir cadastro
-- Armazenar arquivos no sistema
-- Pesquisar, através do CEP, os trabalhadores que residem mais próximos às vagas
-- Aplicar um filtro inteligente que garante que o candidato só terá acesso às ofertas de sua região
-
-## Notificações por E-mail
-
-- **Empregadores**: Receberão os dados dos candidatos por e-mail, facilitando as futuras contratações.
-- **Trabalhadores**: Receberão avisos por e-mail das vagas que correspondam ao seu perfil.
-
-## Benefícios do Sistema
-
-- Facilita o recrutamento de profissionais que moram próximos às vagas ofertadas.
-- Favorece a economia de tempo e dinheiro tanto para o empregador quanto para o trabalhador.
-- Contribui para a produtividade ao permitir que trabalhadores residam mais próximos ao local de trabalho.
-
 ## Tecnologias Utilizadas
 
 - HTML5
@@ -79,9 +49,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
