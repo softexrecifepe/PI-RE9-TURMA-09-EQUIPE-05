@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Variáveis*/
+:root {
+  --cor-primaria: #ad0006;
+  --cor-destaque-titulo: #ff0009;
+  --cor-secundaria: #ff6166;
+  --cor-destaque: #ff9ea1;
+  --cor-destaque-pricipal: #3f3011;
+  --cor-destaque-pricipa-medial: #534527;
+  --cor-destaque-hover: #7a7262;
+  --cor-header: #fffaf1;
+  --cor-verde: #51fc02;
+}
+
+/* Para navegadores modernos */
+* {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer e Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari e Opera */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: square;
+  /*user-select: none;*/
+  text-decoration: none !important;
+  list-style: none !important;
+  outline: none !important;
+}
+
+body {
+  background-color: var(--cor-header);
+}
+
+#homeImg {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+
+    background-image: url("./img/img20.png");
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita que a imagem se repita */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área da página */
+    height: 100vh;
+    /* Garante que o body ocupe a altura total da viewport */
+    overflow: hidden;
+}
