@@ -1,0 +1,29 @@
+/* input.css */
+
+.input-field {
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    color: aliceblue;
+    font-style: italic;
+    background: transparent;
+    font-size: 1em;
+}
+
+.input-field:focus {
+    color: var(--cor-verde);
+    /* Mudança de cor do texto do input quando ativo */
+}
+
+.input-field::placeholder {
+    color: aliceblue;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    /* Sombra do texto do placeholder */
+}
+
+.input-field:invalid {
+    border-color: red; /* Cor da borda para inputs inválidos */
+}
+
