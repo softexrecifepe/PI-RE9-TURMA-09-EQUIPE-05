@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Open_Sans} from 'next/font/google';
+import {Poppins} from 'next/font/google';
 
-const mainFontFamily = Open_Sans({
+const mainFontFamily = Poppins({
   weight: ['300', '400', '500', '600', '700', '800'],
   subsets: ['latin'],
   variable: '--font-family-main',

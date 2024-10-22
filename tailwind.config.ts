@@ -15,8 +15,14 @@ const config: Config = {
         primary: '#Ad0006',
         secondary: '#FF0009',
         terceary: '#Ff6166' ,
-        headerIcons:'#666666',
-        fonts: '#6c6c6c'
+        corDestaque: #ff9ea1,
+        corDestaquePricipal: '#3f3011',
+        corDestaquePricipaMedial: '#534527',
+        corDestaqueHover: '#7a7262',
+        corHeader: '#fffaf1',
+        corVerde: '#51fc02',
+
+    
       },
     },
   },

@@ -1,4 +1,4 @@
-import Button from "../Button/button";
+import Button from "../button";
 import Image from "next/image";
 
 export default function Container() {

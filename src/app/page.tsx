@@ -1,7 +1,7 @@
-import  Header  from "../components/Header/header";
+import  Header  from "../components/header";
 // import Button from "../components/Button/button";
-import Container from "../components/Container/container";
-import Footer from "../components/Footer/footer"
+import Container from "../components/container";
+import Footer from "../components/footer"
 
 
 export default function Home() {
