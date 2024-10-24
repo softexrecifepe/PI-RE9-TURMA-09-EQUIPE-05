@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'home-image': "url('/imagens/home.png')"
+      },
       minHeight: {
         '90vh': '90vh',  // Adiciona a classe min-h-90vh
       },
