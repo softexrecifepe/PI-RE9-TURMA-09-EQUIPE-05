@@ -8,20 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      minHeight: {
+        '90vh': '90vh',  // Adiciona a classe min-h-90vh
+      },
       fontFamily: {
-        sans: ['var(--font-family-main)']
+        sans: ["var(--font-family-main)"],
       },
       colors: {
-        corPrimaria:'#ad0006',
-        cordestaqueTitulo:'#ff0009',
-        corSecundaria:'#ff6166',
-        corDestaque:'#ff9ea1',
-        corDestaquePricipal:'#3f3011',
-        corDestaquePricipalMedial:'#534527',
-        corDestaqueHover:'#7a7262',
-        corHeader:'#fffaf1',
-        corVerde:'#51fc02',
-    
+        corPrimaria: "#ad0006",
+        cordestaqueTitulo: "#ff0009",
+        corSecundaria: "#ff6166",
+        corDestaque: "#ff9ea1",
+        corDestaquePricipal: "#3f3011",
+        corDestaquePricipalMedial: "#534527",
+        corDestaqueHover: "#7a7262",
+        corHeader: "#fffaf1",
+        corVerde: "#51fc02",
       },
     },
   },
