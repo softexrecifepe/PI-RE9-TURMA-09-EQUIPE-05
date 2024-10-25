@@ -19,7 +19,7 @@ const config: Config = {
       },
       colors: {
         corPrimaria: "#ad0006",
-        cordestaqueTitulo: "#ff0009",
+        corDestaqueTitulo: "#ff0009",
         corSecundaria: "#ff6166",
         corDestaque: "#ff9ea1",
         corDestaquePricipal: "#3f3011",
@@ -27,6 +27,8 @@ const config: Config = {
         corDestaqueHover: "#7a7262",
         corHeader: "#fffaf1",
         corVerde: "#51fc02",
+        corTextoBotao: "#f0f8ff",
+
       },
     },
   },
