@@ -2,12 +2,13 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Container from "../../components/container"
 
-export default function Sobre() {
+
+export default function Vagas() {
     return (
         <>
             <Header />
             <Container>
-                <h1>Sobre</h1>
+                <h2 className="">Vagas</h2>
             </Container>
             <Footer />
         </>
