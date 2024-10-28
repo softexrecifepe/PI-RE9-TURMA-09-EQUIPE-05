@@ -1,4 +1,3 @@
-'use client'
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { IoSearch } from "react-icons/io5";

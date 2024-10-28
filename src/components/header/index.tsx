@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa";
 export default function Header() {
 
     return (
-        <header className="w-full bg-corHeader h-14 flex items-center justify-around ">
+        <header className="w-full bg-corHeader h-14 flex items-center justify-around border border-corBordaHeader">
             <Link href="/">
                 <span className="text-2xl text-corDestaqueTitulo font-bold cursor-pointer">Empregue</span>
             </Link>

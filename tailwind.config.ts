@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage:{
-        'home-image': "url('/imagens/home.png')"
+        'home-image': "url('/imagens/home.png')",
+        'custom-gradient': 'linear-gradient(to top right, #ff8b8b, #fff5eb, #fff5eb, #fff6ee, #fff6ee)',
       },
       minHeight: {
         '90vh': '90vh',  // Adiciona a classe min-h-90vh
@@ -28,7 +29,7 @@ const config: Config = {
         corHeader: "#fffaf1",
         corVerde: "#51fc02",
         corTextoBotao: "#f0f8ff",
-
+        corBordaHeader: "#e5c0a0"
       },
     },
   },
