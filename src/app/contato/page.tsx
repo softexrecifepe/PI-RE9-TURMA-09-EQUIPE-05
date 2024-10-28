@@ -10,6 +10,13 @@ export default function Contato() {
             <Header />
             <Container>
                 <h1>Contato</h1>
+                
+                    <h2>Endereço</h2>
+                    <p>Av. Conde da Boa Vista, 1156</p>
+                    <p>Edf. São Luiz, Sala: 223 - 2° Andar</p>
+                    <p>Recife - Pernambuco</p>
+                    <p>Cep: 50000-000</p>
+                
             </Container>
             <Footer />
         </>
