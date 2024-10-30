@@ -1,6 +1,6 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import Container from "../../components/container"
+
 
 
 export default function Contato() {
@@ -8,10 +8,6 @@ export default function Contato() {
 
         <>
 <Header />
-
-
-
-<Container>
 
     
     <div className="flex flex-col items-center py-16 bg-gray-50">
@@ -32,8 +28,7 @@ export default function Contato() {
       
         </div>
     </div>
-    
-</Container>
+
 <Footer />
 
 

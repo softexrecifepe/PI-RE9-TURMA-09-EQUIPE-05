@@ -16,7 +16,7 @@ export default function Header() {
                 <Link href="/contato" className="hover:text-corSecundaria cursor-pointer tracking-widest ml-5 transition ease-linear duration-200">CONTATO</Link>
             </nav>
             <div className="text-corDestaquePricipal text-lg flex items-center hover:text-corSecundaria cursor-pointer">
-                <i><FaUser /></i>
+                <Link href="/login"><FaUser /></Link>
             </div>
         </header>
     )
