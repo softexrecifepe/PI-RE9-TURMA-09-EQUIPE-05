@@ -16,8 +16,8 @@
     "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "20.17.3",
+    "@types/react": "18.3.12",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",
     "css-loader": "^7.1.2",
