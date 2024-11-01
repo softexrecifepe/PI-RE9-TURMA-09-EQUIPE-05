@@ -11,6 +11,7 @@ const config: Config = {
       backgroundImage:{
         'home-image': "url('/imagens/home.png')",
         'custom-gradient': 'linear-gradient(to top right, #ff8b8b, #fff5eb, #fff5eb, #fff6ee, #fff6ee)',
+        'login-image': "url('/imagens/login.png')",
       },
       minHeight: {
         '90vh': '90vh',  // Adiciona a classe min-h-90vh
