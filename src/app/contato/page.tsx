@@ -1,51 +1,33 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-<<<<<<< HEAD
-
-=======
->>>>>>> 3b916893208ef4812d827fe8ad5d8530e04c74ca
+import { IoLogoFacebook } from "react-icons/io";
+import { IoLogoLinkedin } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 export default function Contato() {
     return (
         <>
-<<<<<<< HEAD
-<Header />
-
-
-
-  
-    <div className="flex flex-col items-center py-16 bg-gray-50">
-=======
-<Header />    
-    <div className="flex min-h-screen flex-col items-center py-16 bg-gray-50">
->>>>>>> 3b916893208ef4812d827fe8ad5d8530e04c74ca
-        <h1 className="text-5xl font-bold text-gray-800 mb-8">CONTATO</h1>
-        
-        <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
-    <div className="flex min-h-screen flex-col items-center py-16 bg-custom-gradient">
-                
-        <div className="p-8 w-full max-w-md text-center">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4">Endereço</h2>
-            <p className="text-lg text-gray-600 mb-2">Av. Conde da Boa Vista, 1156</p>
-            <p className="text-lg text-gray-600 mb-2">Edf. São Luiz, Sala: 223 - 2° Andar</p>
-            <p className="text-lg text-gray-600 mb-2">Recife - Pernambuco</p>
-            <p className="text-lg text-gray-600">Cep: 50000-000</p>;
-        </div>
-        
-        <div className="flex justify-center mt-8 space-x-4">
-            <a href="#" className="text-blue-600 hover:text-blue-700 text-xl font-medium">Facebook</a>
-            <a href="#" className="text-blue-600 hover:text-blue-700 text-xl font-medium">LinkedIn</a>
-            <a href="#" className="text-blue-600 hover:text-blue-700 text-xl font-medium">Instagram</a>
-      
-        </div>
-    </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 3b916893208ef4812d827fe8ad5d8530e04c74ca
-<Footer />
-
-
+            <Header />
+            <div className="min-h-screen py-16 bg-custom-gradient flex justify-between">
+                <div className="p-8 w-full max-w-md">
+                    <h2 className="text-2xl font-semibold text-corSecundaria mb-4">Endereço</h2>
+                    <p className="text-lg text-corDestaquePricipal">Av. Conde da Boa Vista, 1156</p>
+                    <p className="text-lg text-corDestaquePricipal">Edf. São Luiz, Sala: 223 - 2° Andar</p>
+                    <p className="text-lg text-corDestaquePricipal">Recife - Pernambuco</p>
+                    <p className="text-lg text-corDestaquePricipal">Cep: 50000-000</p>;
+                </div>
+                <div className="flex flex-col mr-80 py-8">
+                    <h2 className="text-2xl font-semibold text-corSecundaria  mb-4">Social</h2>
+                    <div className="w-full max-w-md flex items-center justify-center">
+                        <a href="#" className="text-corDestaquePricipal hover:text-blue-700 text-5xl pr-[6px]"><IoLogoFacebook /></a>
+                        <a href="#" className="text-corDestaquePricipal hover:text-blue-700 text-5xl pr-[6px]"><IoLogoLinkedin /></a>
+                        <a href="#" className="text-corDestaquePricipal hover:text-blue-700 text-5xl pr-[6px]"><MdEmail /></a>
+                        <a href="#" className="text-corDestaquePricipal hover:text-blue-700 text-[44px] pr-[6px]"><FaWhatsappSquare /></a>
+                    </div>
+                </div>
+            </div>
+            <Footer />
         </>
     )
 }
