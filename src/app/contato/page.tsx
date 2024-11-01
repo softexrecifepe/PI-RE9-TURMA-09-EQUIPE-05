@@ -1,10 +1,27 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3b916893208ef4812d827fe8ad5d8530e04c74ca
 
 export default function Contato() {
     return (
         <>
+<<<<<<< HEAD
+<Header />
+
+
+
+  
+    <div className="flex flex-col items-center py-16 bg-gray-50">
+=======
 <Header />    
+    <div className="flex min-h-screen flex-col items-center py-16 bg-gray-50">
+>>>>>>> 3b916893208ef4812d827fe8ad5d8530e04c74ca
+        <h1 className="text-5xl font-bold text-gray-800 mb-8">CONTATO</h1>
+        
+        <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
     <div className="flex min-h-screen flex-col items-center py-16 bg-custom-gradient">
                 
         <div className="p-8 w-full max-w-md text-center">
@@ -22,7 +39,10 @@ export default function Contato() {
       
         </div>
     </div>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 3b916893208ef4812d827fe8ad5d8530e04c74ca
 <Footer />
 
 
