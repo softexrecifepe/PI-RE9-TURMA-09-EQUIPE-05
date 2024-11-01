@@ -1,16 +1,11 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
-
-
 export default function Contato() {
     return (
-
         <>
-<Header />
-
-    
-    <div className="flex flex-col items-center py-16 bg-gray-50">
+<Header />    
+    <div className="flex min-h-screen flex-col items-center py-16 bg-gray-50">
         <h1 className="text-5xl font-bold text-gray-800 mb-8">CONTATO</h1>
         
         <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
