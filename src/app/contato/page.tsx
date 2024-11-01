@@ -5,10 +5,9 @@ export default function Contato() {
     return (
         <>
 <Header />    
-    <div className="flex min-h-screen flex-col items-center py-16 bg-gray-50">
-        <h1 className="text-5xl font-bold text-gray-800 mb-8">CONTATO</h1>
-        
-        <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
+    <div className="flex min-h-screen flex-col items-center py-16 bg-custom-gradient">
+                
+        <div className="p-8 w-full max-w-md text-center">
             <h2 className="text-2xl font-semibold text-gray-700 mb-4">Endereço</h2>
             <p className="text-lg text-gray-600 mb-2">Av. Conde da Boa Vista, 1156</p>
             <p className="text-lg text-gray-600 mb-2">Edf. São Luiz, Sala: 223 - 2° Andar</p>
