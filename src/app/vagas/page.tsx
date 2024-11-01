@@ -10,7 +10,7 @@ export default function Vagas() {
             <Header />
             <section
                 id='containerRow'
-                className='w-full flex flex-wrap flex-row py-24 px-12 items-center justify-center bg-gradient-to-tr from-[#ff8b8b] via-[#fff5eb] to-[#fff6ee] bg-center bg-no-repeat bg-cover h-full overflow-hidden'
+                className='w-full min-h-screen flex flex-wrap flex-row py-24 px-12 items-center justify-center bg-gradient-to-tr from-[#ff8b8b] via-[#fff5eb] to-[#fff6ee] bg-center bg-no-repeat bg-cover h-full overflow-hidden'
             >
                 <div className='boxRow flex flex-wrap flex-row w-full h-auto'>
                     <div className='toggleContainer'></div>
