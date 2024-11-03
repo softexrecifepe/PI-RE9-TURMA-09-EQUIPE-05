@@ -1,7 +1,8 @@
 import Header from "../../components/header"
 import Footer from "../../components/footer"
-import { IoSearch } from "react-icons/io5";
 import Link from "next/link";
+import { FaRegEyeSlash,FaRegEye } from "react-icons/fa";
+
 
 export default function Login() {
 
@@ -12,10 +13,12 @@ export default function Login() {
         <div className="max-w-sm p-6 border rounded-lg border-corDestaqueTitulo ml-12">
           <form className="space-y-4">
             <input type="text" id="email" placeholder="Digite seu email" className="w-full p-2 border-b-2 border-corTextoBotao placeholder-corTextoBotao italic focus:outline-none bg-transparent" maxLength={30} />
-            <input type="text" id="senha" placeholder="Digite sua senha" className="w-full p-2 border-b-2 border-corTextoBotao placeholder-corTextoBotao italic  focus:outline-none bg-transparent" maxLength={30} /> 
+            <div>
+              <input type="password" id="senha" placeholder="Digite sua senha" className="w-full p-2 border-b-2 border-corTextoBotao placeholder-corTextoBotao italic  focus:outline-none bg-transparent" maxLength={30} /> 
+            </div>
             <button type="submit" className="w-full bg-corPrimaria text-corTextoBotao py-2 rounded-full hover:bg-corDestaqueTitulo">
               <span className="inline-flex items-center">
-                <i className="text-lg mr-1.5"><IoSearch /></i>
+                <i className="text-lg mr-1.5"></i>
                 Login
               </span>
             </button>
