@@ -1,23 +1,46 @@
-import Link from "next/link";
+import Link from "next/link"; // Importa o componente Link do Next.js
 import { FaUser } from "react-icons/fa";
 
 export default function Header() {
-
-    return (
-        <header className="w-full bg-corHeader h-14 flex items-center justify-around border border-corBordaHeader">
-            <Link href="/">
-                <span className="text-2xl text-corDestaqueTitulo font-bold cursor-pointer">Empregue</span>
-            </Link>
-            <nav>
-                <Link href="/" className="hover:text-corSecundaria cursor-pointer tracking-widest ml-5 transition ease-linear duration-200">HOME</Link>
-                <Link href="/sobre" className="hover:text-corSecundaria cursor-pointer tracking-widest ml-5 transition ease-linear duration-200">SOBRE</Link>
-                <Link href="/vagas" className="hover:text-corSecundaria cursor-pointer tracking-widest ml-5 transition ease-linear duration-200">VAGAS</Link>
-                <Link href="/cadastro" className="hover:text-corSecundaria cursor-pointer tracking-widest ml-5 transition ease-linear duration-200">CADASTRO</Link>
-                <Link href="/contato" className="hover:text-corSecundaria cursor-pointer tracking-widest ml-5 transition ease-linear duration-200">CONTATO</Link>
-            </nav>
-            <div className="text-corDestaquePricipal text-lg flex items-center hover:text-corSecundaria cursor-pointer">
-                <Link href="/login"><FaUser /></Link>
-            </div>
-        </header>
-    )
+  return (
+    <header>
+      <div className='logo animate__animated animate__rubberBand boxLogo'>
+        <Link href='/'>
+          {/* Usa o Link para navegação */}
+          <span className='text-corDestaqueTitulo text-[1.2em] font-bold cursor-pointer hover:text-corSecundaria'>
+            Empregue
+          </span>
+        </Link>
+      </div>
+      <div className='boxNav'>
+        <ul>
+          <li>
+            <Link href='/'>HOME</Link> {/* Usa o Link para navegação */}
+          </li>
+          <li>
+            <Link href='/sobre'>SOBRE</Link> {/* Usa o Link para navegação */}
+          </li>
+          <li>
+            <Link href='/vagas'>VAGAS</Link> {/* Usa o Link para navegação */}
+          </li>
+          <li>
+            <Link href='/cadastro'>CADASTRO</Link>
+            {/* Usa o Link para navegação */}
+          </li>
+          <li>
+            <Link href='/contato'>CONTATO</Link>
+            {/* Usa o Link para navegação */}
+          </li>
+        </ul>
+      </div>
+      <div className='boxUser'>
+        <Link href='/user'>
+          {/* Usa o Link para navegação */}
+          <i className='fa-solid fa-user'>
+            <FaUser />
+          </i>
+        </Link>
+      </div>
+    </header>
+  );
 }

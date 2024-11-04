@@ -1,14 +1,24 @@
+import React from "react";
+
 export default function ComoCriar() {
   return (
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat
-      mollis venenatis. Praesent tellus tortor, bibendum hendrerit convallis
-      nec, luctus eget magna. Ut ultricies, risus sed consectetur maximus, odio
-      felis malesuada metus, vitae auctor enim odio vitae dolor. Maecenas
-      mollis, magna et maximus posuere, elit diam volutpat nisi, vel consectetur
-      est quam sit amet libero. Quisque et lorem et ante congue gravida ac a
-      lectus. Morbi tristique rutrum tortor quis sollicitudin. Mauris porttitor
-      nisi at felis posuere varius. Maecenas eget lacus lacus. Pellentesque.
-    </p>
+    <>
+      <p>
+        Criar uma vaga é fácil e rápido! Basta preencher o formulário com as
+        informações necessárias para dar vida à sua oportunidade de emprego. Em
+        apenas alguns passos, você terá em suas mãos o poder de recrutar
+        talentos que residem próximos ao local da vaga, garantindo candidatos
+        mais alinhados e acessíveis para a sua necessidade.
+      </p>
+      <p>
+        Ao criar a vaga, os currículos e dados dos interessados serão enviados
+        diretamente para o seu e-mail. As ofertas ficam ativas por 30 dias, e
+        depois são automaticamente removidas do nosso banco de dados para manter
+        tudo atualizado e dinâmico. Simples, prático e eficiente. Quando estiver
+        pronto, basta clicar em &quot;Ok!&quot; e começar a buscar os melhores
+        profissionais!
+      </p>
+      <br />
+    </>
   );
 }

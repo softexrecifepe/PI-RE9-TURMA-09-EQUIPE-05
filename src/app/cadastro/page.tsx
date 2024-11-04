@@ -2,16 +2,14 @@ import Head from "next/head"; // Adicione isso se estiver usando Next.js
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import BtnCadastrar from "@/components/btnCadastrar";
-import BtnDownloads from "@/components/btnDownloads";
+import { MdOutlineVisibilityOff } from "react-icons/md";
+import { MdOutlineFileDownload } from "react-icons/md";
+import Script from "next/script"; // Importa o componente Script do Next.js
 
 export default function Cadastro() {
   return (
     <>
       <Head>
-        <link
-          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'
-          rel='stylesheet'
-        />
         <link
           href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
           rel='stylesheet'
@@ -23,7 +21,7 @@ export default function Cadastro() {
         className='w-full flex flex-wrap p-[100px_50px] bg-center bg-no-repeat bg-cover h-screen overflow-hidden items-start justify-start'
         style={{ backgroundImage: "url('../imagens/img22.png')" }}
       >
-        <div className="container">
+        <div className='container'>
           <div className='toggleContainer'></div>
           <div className='boxCadastro'>
             <form action='' method='POST'>
@@ -121,7 +119,9 @@ export default function Cadastro() {
                   maxLength={20}
                   className='flex-grow focus:outline-none'
                 />
-                <i className='fa-regular fa-eye-slash text-gray-500 ml-2'></i>
+                <i className='fa-regular fa-eye-slash'>
+                  <MdOutlineVisibilityOff />
+                </i>
               </div>
 
               <div className='boxSenha'>
@@ -134,11 +134,20 @@ export default function Cadastro() {
                   maxLength={20}
                   className='flex-grow focus:outline-none'
                 />
-                <i className='fa-regular fa-eye-slash text-gray-500 ml-2'></i>
+                <i className='fa-regular fa-eye-slash'>
+                  <MdOutlineVisibilityOff />
+                </i>
               </div>
 
               <div className='boxButton'>
-                <BtnDownloads />
+                <button className='bg-[var(--cor-destaque-principal)] hover:bg-[var(--cor-destaque-principal-medial)] py-3 flex items-center justify-center rounded-full cursor-pointer mt-5 w-full border-none transition-colors duration-300'>
+                  <i className='fa-regular fa-share-from-square mr-2 '>
+                    <MdOutlineFileDownload />
+                  </i>
+                  <span className='text-aliceblue text-lg'>
+                    Currículum vitae
+                  </span>
+                </button>
                 <BtnCadastrar />
               </div>
             </form>
@@ -146,6 +155,11 @@ export default function Cadastro() {
         </div>
       </section>
       <Footer />
+
+      <Script
+        src='../dist/toggle.js'
+        strategy='lazyOnload' // Carrega o script quando a página é carregada
+      />
     </>
   );
 }
