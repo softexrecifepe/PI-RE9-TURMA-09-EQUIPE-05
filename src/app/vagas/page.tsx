@@ -2,7 +2,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import BtnAncora from "@/components/btnAncora";
 import ComoCriar from "@/components/txtComoCriar";
-import { ImgVagas } from "@/components/ImgVagas";
+import { ImgVagas } from "@/components/comoCriarImg";
 
 export default function Vagas() {
   return (

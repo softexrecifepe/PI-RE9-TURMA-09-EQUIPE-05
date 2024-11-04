@@ -1,6 +1,7 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import BtnCriarVagas from "@/components/btnCriarVagas";
+// BtnAncora.js
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import BtnCriarVagas from "../../components/btnCriarVagas"; // Assegure-se de que o caminho está correto
 import { FaImage } from "react-icons/fa6";
 
 export default function CriarVagas() {
@@ -19,10 +20,12 @@ export default function CriarVagas() {
                 htmlFor='imagemEmpresa'
                 className='flex flex-col items-center text-[18px] text-corDestaqueHover hover:text-corDestaque cursor-pointer'
               >
-                <FaImage className='text-[50px] mb-[10px] transition-colors duration-300 ease-in-out text-corDestaqueHover hover:text-corDestaque' />
+                <i className='fa-regular fa-image text-[50px] mb-[10px] transition-colors duration-300 ease-in-out text-corDestaqueHover hover:text-corDestaque'>
+                  <FaImage />
+                </i>
               </label>
               <input
-                className='hidden'
+                className='imagemEmpresa hidden'
                 id='imagemEmpresa'
                 type='file'
                 name='imagemEmpresa'
@@ -58,7 +61,7 @@ export default function CriarVagas() {
                 placeholder='CEP'
                 title='CEP Empresa'
                 required
-                maxLength={9} // Corrigido para 9 caracteres (formato de CEP no Brasil)
+                maxLength={10} // Corrigido para 10 caracteres
                 pattern='\d{5}-\d{3}' // Padrão atualizado
               />
 
@@ -102,11 +105,11 @@ export default function CriarVagas() {
                 style={{ display: "none" }}
               />
             </div>
-           <BtnCriarVagas />
+            <BtnCriarVagas />
           </div>
         </div>
       </section>
-     <Footer />
+      <Footer />
     </>
   );
 }
