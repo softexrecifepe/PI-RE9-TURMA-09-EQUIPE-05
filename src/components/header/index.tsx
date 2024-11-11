@@ -1,9 +1,11 @@
 import Link from "next/link"; // Importa o componente Link do Next.js
+import "animate.css";
 import { FaUser } from "react-icons/fa";
 
 export default function Header() {
     return (
-      <header>       
+      <header>
+               
         <div className='logo animate__animated animate__rubberBand boxLogo'>
           <Link href='/'>{/* Usa o Link para navegação */}
             <span className='text-corDestaqueTitulo text-[1.2em] font-bold cursor-pointer hover:text-corSecundaria'>

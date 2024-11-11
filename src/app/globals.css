@@ -267,7 +267,7 @@ ____________________________________________________________________________*/
 _____________________________________________________________________________*/
 .boxCadastro {
   width: 100%;
-  height: 400px;
+  height: 350px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid var(--cor-destaque-titulo);
@@ -613,6 +613,7 @@ ________________________________________________________________________________
 }
 
 .cepEmpresa,
+.emailEmpresa,
 .bairroEmpresa,
 .cidadeEmpresa,
 .estadoEmpresa,
@@ -621,7 +622,7 @@ ________________________________________________________________________________
     color: var(--cor-destaque-hover);
 }
 
-.cepEmpresa::placeholder .bairroEmpresa::placeholder .cidadeEmpresa::placeholder .estadoEmpresa::placeholder .enderecoEmpresa::placeholder {
+.cepEmpresa::placeholder .emailEmpresa::placeholder .bairroEmpresa::placeholder .cidadeEmpresa::placeholder .estadoEmpresa::placeholder .enderecoEmpresa::placeholder {
     font-size: 0.9em;
     color: var(--cor-destaque-pricipa-medial);
 }
@@ -682,7 +683,7 @@ ________________________________________________________________________________
 }
 
 .alerta p {
-    color: var(--cor-destaque-pricipal);
+    color: #000000;
     font-size: 1em;
     font-weight: 500;
 }

@@ -1,20 +1,115 @@
-import Head from "next/head"; // Adicione isso se estiver usando Next.js
+"use client"; // Marcar o componente como Client Component
+
+import { useForm, SubmitHandler } from "react-hook-form";
+import { useState } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import BtnCadastrar from "@/components/btnCadastrar";
-import { MdOutlineVisibilityOff } from "react-icons/md";
-import { MdOutlineFileDownload } from "react-icons/md";
-import Script from "next/script"; // Importa o componente Script do Next.js
+import { MdOutlineVisibilityOff, MdOutlineVisibility } from "react-icons/md";
+
+// Definindo a interface para os dados do formulário
+interface FormData {
+  nome: string;
+  sobreNome: string;
+  email: string;
+  telefone: string;
+  cep: string;
+  endereco: string;
+  bairro: string;
+  cidade: string;
+  estado: string;
+  senha: string;
+  repitaSenha: string;
+}
 
 export default function Cadastro() {
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors },
+  } = useForm<FormData>();
+  const [senhaVisivel, setSenhaVisivel] = useState(false);
+  const [repitaSenhaVisivel, setRepitaSenhaVisivel] = useState(false);
+
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    if (data.senha !== data.repitaSenha) {
+      alert("As senhas não coincidem.");
+      return;
+    }
+
+    try {
+      // Enviar todos os dados para o backend
+      const response = await fetch("/api/cadastro", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data), // Enviar todos os dados, não apenas a senha
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        alert(result.message);
+      } else {
+        alert(result.error);
+      }
+    } catch (error) {
+      console.error("Erro ao enviar dados:", error);
+      alert("Erro ao enviar dados.");
+    }
+  };
+
+  const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, value } = e.target;
+    let formattedValue = value;
+
+    // Permitir apenas números nos campos "telefone" e "cep"
+    if (id === "telefone" || id === "cep") {
+      formattedValue = value.replace(/\D/g, "");
+
+      if (id === "telefone" && formattedValue.length > 2) {
+        formattedValue = `(${formattedValue.slice(0, 2)})${formattedValue.slice(
+          2,
+          7
+        )}-${formattedValue.slice(7, 11)}`;
+      }
+
+      if (id === "cep" && formattedValue.length > 5) {
+        formattedValue = `${formattedValue.slice(0, 5)}-${formattedValue.slice(
+          5,
+          8
+        )}`;
+      }
+    }
+
+    setValue(id as keyof FormData, formattedValue); // Atualiza o valor do campo no React Hook Form
+
+    // Buscar o endereço automaticamente pelo CEP
+    if (id === "cep" && formattedValue.length === 9) {
+      try {
+        const response = await fetch(
+          `https://viacep.com.br/ws/${formattedValue.replace("-", "")}/json/`
+        );
+        const data = await response.json();
+
+        if (!data.erro) {
+          setValue("endereco", data.logradouro);
+          setValue("bairro", data.bairro);
+          setValue("cidade", data.localidade);
+          setValue("estado", data.uf);
+        } else {
+          alert("CEP inexistente!"); // Exibe o alerta
+          setValue("cep", ""); // Limpa o campo de CEP
+          e.target.focus(); // Reposiciona o cursor no campo de CEP
+        }
+      } catch (error) {
+        console.error("Erro ao buscar CEP:", error);
+        alert("Erro ao buscar CEP.");
+      }
+    }
+  };
+
   return (
     <>
-      <Head>
-        <link
-          href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
-          rel='stylesheet'
-        />
-      </Head>
       <Header />
       <section
         id='cadastroImg'
@@ -22,9 +117,11 @@ export default function Cadastro() {
         style={{ backgroundImage: "url('../imagens/img22.png')" }}
       >
         <div className='container'>
-          <div className='toggleContainer'></div>
+          <div className='w-full h-auto py-5'>
+            <h3>Cadastro do candidato</h3>
+          </div>
           <div className='boxCadastro'>
-            <form action='' method='POST'>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <input
                 type='text'
                 id='nome'
@@ -32,8 +129,10 @@ export default function Cadastro() {
                 title='Nome'
                 required
                 maxLength={30}
-                className=''
+                {...register("nome", { required: true })}
               />
+              {errors.nome && <span>Nome é obrigatório</span>}
+
               <input
                 type='text'
                 id='sobreNome'
@@ -41,8 +140,10 @@ export default function Cadastro() {
                 title='Sobrenome'
                 required
                 maxLength={30}
-                className=''
+                {...register("sobreNome", { required: true })}
               />
+              {errors.sobreNome && <span>Sobrenome é obrigatório</span>}
+
               <input
                 type='email'
                 id='email'
@@ -50,8 +151,10 @@ export default function Cadastro() {
                 title='Email'
                 required
                 maxLength={30}
-                className=''
+                {...register("email", { required: true })}
               />
+              {errors.email && <span>Email é obrigatório</span>}
+
               <input
                 type='text'
                 id='telefone'
@@ -59,9 +162,11 @@ export default function Cadastro() {
                 title='Telefone'
                 required
                 maxLength={15}
-                pattern='\(\d{2}\) \d{5}-\d{4}'
-                className=''
+                {...register("telefone", { required: true })}
+                onChange={handleInputChange}
               />
+              {errors.telefone && <span>Telefone é obrigatório</span>}
+
               <input
                 type='text'
                 id='cep'
@@ -69,9 +174,11 @@ export default function Cadastro() {
                 title='CEP'
                 required
                 maxLength={9}
-                pattern='\d{5}-\d{3}'
-                className=''
+                {...register("cep", { required: true })}
+                onChange={handleInputChange}
               />
+              {errors.cep && <span>CEP é obrigatório</span>}
+
               <input
                 type='text'
                 id='endereco'
@@ -79,8 +186,11 @@ export default function Cadastro() {
                 title='Endereço'
                 required
                 maxLength={30}
-                className=''
+                disabled
+                {...register("endereco", { required: true })}
               />
+              {errors.endereco && <span>Endereço é obrigatório</span>}
+
               <input
                 type='text'
                 id='bairro'
@@ -88,8 +198,11 @@ export default function Cadastro() {
                 title='Bairro'
                 required
                 maxLength={30}
-                className=''
+                disabled
+                {...register("bairro", { required: true })}
               />
+              {errors.bairro && <span>Bairro é obrigatório</span>}
+
               <input
                 type='text'
                 id='cidade'
@@ -97,8 +210,11 @@ export default function Cadastro() {
                 title='Cidade'
                 required
                 maxLength={30}
-                className=''
+                disabled
+                {...register("cidade", { required: true })}
               />
+              {errors.cidade && <span>Cidade é obrigatória</span>}
+
               <input
                 type='text'
                 id='estado'
@@ -106,60 +222,68 @@ export default function Cadastro() {
                 title='Estado'
                 required
                 maxLength={30}
-                className=''
+                disabled
+                {...register("estado", { required: true })}
               />
+              {errors.estado && <span>Estado é obrigatório</span>}
 
               <div className='boxSenha'>
                 <input
-                  type='password'
+                  type={senhaVisivel ? "text" : "password"}
                   id='senha'
                   placeholder='Digite sua senha'
-                  title='Digite sua senha'
+                  title='Senha'
                   required
                   maxLength={20}
                   className='flex-grow focus:outline-none'
+                  {...register("senha", { required: true })}
                 />
-                <i className='fa-regular fa-eye-slash'>
-                  <MdOutlineVisibilityOff />
+                <i
+                  className='cursor-pointer'
+                  onMouseDown={() => setSenhaVisivel(true)}
+                  onMouseUp={() => setSenhaVisivel(false)}
+                >
+                  {senhaVisivel ? (
+                    <MdOutlineVisibility />
+                  ) : (
+                    <MdOutlineVisibilityOff />
+                  )}
                 </i>
               </div>
 
               <div className='boxSenha'>
                 <input
-                  type='password'
+                  type={repitaSenhaVisivel ? "text" : "password"}
                   id='repitaSenha'
                   placeholder='Repita a sua senha'
-                  title='Repita a sua senha'
+                  title='Repita Senha'
                   required
                   maxLength={20}
                   className='flex-grow focus:outline-none'
+                  {...register("repitaSenha", { required: true })}
                 />
-                <i className='fa-regular fa-eye-slash'>
-                  <MdOutlineVisibilityOff />
+                <i
+                  className='cursor-pointer'
+                  onMouseDown={() => setRepitaSenhaVisivel(true)}
+                  onMouseUp={() => setRepitaSenhaVisivel(false)}
+                >
+                  {repitaSenhaVisivel ? (
+                    <MdOutlineVisibility />
+                  ) : (
+                    <MdOutlineVisibilityOff />
+                  )}
                 </i>
               </div>
 
               <div className='boxButton'>
-                <button className='bg-[var(--cor-destaque-principal)] hover:bg-[var(--cor-destaque-principal-medial)] py-3 flex items-center justify-center rounded-full cursor-pointer mt-5 w-full border-none transition-colors duration-300'>
-                  <i className='fa-regular fa-share-from-square mr-2 '>
-                    <MdOutlineFileDownload />
-                  </i>
-                  <span className='text-aliceblue text-lg'>
-                    Currículum vitae
-                  </span>
-                </button>
                 <BtnCadastrar />
               </div>
+              
             </form>
           </div>
         </div>
       </section>
       <Footer />
-
-      <Script
-        src='../dist/toggle.js'
-        strategy='lazyOnload' // Carrega o script quando a página é carregada
-      />
     </>
   );
 }

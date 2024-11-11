@@ -1,9 +1,19 @@
-import Footer from "@/components/footer"; // Corrigido para maiúsculas
-import Header from "@/components/header"; // Corrigido para maiúsculas
-import Link from "next/link"; // Importando o componente Link do Next.js
-import { MdOutlineVisibilityOff } from "react-icons/md";
+"use client"; // Marcar o componente como Client Component
+import { useState } from "react"; // Importando useState para gerenciar o estado
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import Link from "next/link";
+import { MdOutlineVisibilityOff, MdOutlineVisibility } from "react-icons/md"; // Importando os dois ícones
 
 export default function Login() {
+  // Estado para controlar a visibilidade da senha
+  const [passwordVisible, setPasswordVisible] = useState(false);
+
+  // Função para alternar a visibilidade da senha
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
   return (
     <>
       <Header />
@@ -29,16 +39,24 @@ export default function Login() {
 
               <div className='boxSenha'>
                 <input
-                  type='password'
+                  type={passwordVisible ? "text" : "password"} // Alterna entre texto e senha
                   id='senha'
                   placeholder='Digite sua senha'
                   title='Digite sua senha'
                   required
                   maxLength={20}
                 />
-                <i className='fa-regular fa-eye-slash'>
-                  {" "}
-                  <MdOutlineVisibilityOff />
+                <i
+                  onMouseDown={togglePasswordVisibility} // Exibe a senha ao pressionar
+                  onMouseUp={togglePasswordVisibility} // Reverte a visibilidade ao soltar
+                  onMouseLeave={togglePasswordVisibility} // Reverte a visibilidade se o mouse sair
+                  className='cursor-pointer'
+                >
+                  {passwordVisible ? (
+                    <MdOutlineVisibility />
+                  ) : (
+                    <MdOutlineVisibilityOff />
+                  )}
                 </i>
               </div>
 
@@ -51,8 +69,6 @@ export default function Login() {
           <div className='boxH3'>
             <span className='txtBranco'>Ainda não é cadastrado?</span>
             <Link href='cadastro'>
-              {" "}
-              {/* Usando o Link do Next.js para navegação */}
               <span className='cliqueAqui'> Clique aqui!</span>
             </Link>
           </div>
