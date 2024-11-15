@@ -4,7 +4,6 @@ import { useState } from "react"; // Importando o hook useState
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Button from "@/components/button";
-import ToggleBrowser from "@/components/toggle";
 
 export default function Home() {
   // Estados para armazenar as mensagens de alerta
@@ -168,9 +167,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Footer />
-      <ToggleBrowser />
+      <Footer />     
     </>
   );
 }

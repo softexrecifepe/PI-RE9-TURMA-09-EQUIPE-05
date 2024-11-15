@@ -46,8 +46,7 @@
 
 header {
   background-color: var(--cor-header);
-  padding: 10px 50px;
-  position: fixed;
+  padding: 10px 50px; 
   width: 100%;
   display: flex;
   align-items: center;

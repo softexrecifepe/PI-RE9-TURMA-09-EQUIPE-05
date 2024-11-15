@@ -6,6 +6,8 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import BtnCadastrar from "@/components/btnCadastrar";
 import { MdOutlineVisibilityOff, MdOutlineVisibility } from "react-icons/md";
+import CryptoJS from "crypto-js";
+import { useRouter } from "next/navigation"; // Importa o hook para navegação
 
 // Definindo a interface para os dados do formulário
 interface FormData {
@@ -27,35 +29,79 @@ export default function Cadastro() {
     register,
     handleSubmit,
     setValue,
+    reset,
     formState: { errors },
   } = useForm<FormData>();
   const [senhaVisivel, setSenhaVisivel] = useState(false);
   const [repitaSenhaVisivel, setRepitaSenhaVisivel] = useState(false);
 
-  const onSubmit: SubmitHandler<FormData> = async (data) => {
+  const router = useRouter(); // Inicializa o hook de navegação
+
+  const onSubmit: SubmitHandler<FormData> = (data) => {
+    // Verifica se as senhas são iguais
     if (data.senha !== data.repitaSenha) {
       alert("As senhas não coincidem.");
       return;
     }
 
-    try {
-      // Enviar todos os dados para o backend
-      const response = await fetch("/api/cadastro", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data), // Enviar todos os dados, não apenas a senha
-      });
+    // Recupera os usuários já cadastrados do localStorage ou inicializa como um array vazio
+    const usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
 
-      const result = await response.json();
-      if (response.ok) {
-        alert(result.message);
-      } else {
-        alert(result.error);
-      }
-    } catch (error) {
-      console.error("Erro ao enviar dados:", error);
-      alert("Erro ao enviar dados.");
+    // Verifica se o email já está cadastrado
+    const emailJaCadastrado = usuarios.some(
+      (usuario: { email: string }) => usuario.email === data.email
+    );
+
+    if (emailJaCadastrado) {
+      alert("Email já cadastrado!");
+      // Redireciona para a página do usuário
+      router.push("/user");
+      return;
     }
+
+    // Criptografa a senha usando SHA-256
+    const senhaCriptografada = CryptoJS.SHA256(data.senha).toString(
+      CryptoJS.enc.Base64
+    );
+
+    // Cria o novo usuário com a senha criptografada
+    const novoUsuario = {
+      nome: data.nome,
+      sobreNome: data.sobreNome,
+      email: data.email,
+      telefone: data.telefone,
+      cep: data.cep,
+      endereco: data.endereco,
+      bairro: data.bairro,
+      cidade: data.cidade,
+      estado: data.estado,
+      senha: senhaCriptografada,
+    };
+
+    // Verifica se o novo usuário já existe, para não adicionar duplicatas
+    const usuarioExistente = usuarios.some(
+      (usuario: { email: string }) => usuario.email === novoUsuario.email
+    );
+
+    if (!usuarioExistente) {
+      // Adiciona o novo usuário ao array de usuários
+      usuarios.push(novoUsuario);
+
+      // Atualiza o localStorage com os novos dados de usuários
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+      // Exibindo os dados dos usuários atualizados no console (apenas os novos dados)
+      console.log("Usuários cadastrados (atualizado):", usuarios);
+    } else {
+      alert("Este usuário já está cadastrado.");
+    }
+
+    // Exibindo os dados do novo usuário no console
+    console.log("Usuário cadastrado com sucesso:", novoUsuario);
+    alert("Cadastro realizado com sucesso!");
+
+    // Limpa os campos do formulário
+    reset();
   };
 
   const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -278,7 +324,6 @@ export default function Cadastro() {
               <div className='boxButton'>
                 <BtnCadastrar />
               </div>
-              
             </form>
           </div>
         </div>
