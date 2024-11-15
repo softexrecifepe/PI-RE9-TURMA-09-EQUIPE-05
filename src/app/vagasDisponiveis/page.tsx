@@ -1,14 +1,16 @@
+"use client";
+import { useEffect, useState } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import BtnEuQuero from "@/components/btnEuQuero";
 
 export default function VagasDisponiveis() {
-  const vagasDisponiveis = [
+  const [vagasDisponiveis, setVagasDisponiveis] = useState([
     {
       empresa: "GRANDE RECIFE",
       cargo: "Mecânico",
       endereco: {
-        cep: "50030150",
+        cep: "50030-150",
         rua: "Avenida Alfredo Lisboa",
         bairro: "Recife Antigo",
         cidade: "Recife",
@@ -134,7 +136,46 @@ export default function VagasDisponiveis() {
       email: "contato@novoatacarejo.com.br",
       imagem: "/logomarcas/novo.png",
     },
-  ];
+  ]);
+
+  useEffect(() => {
+    const vagasArmazenadas = localStorage.getItem("vagas");
+
+    if (vagasArmazenadas) {
+      try {
+        const vagasDinamicas = JSON.parse(vagasArmazenadas);
+
+        if (Array.isArray(vagasDinamicas)) {
+          const vagasCorrigidas = vagasDinamicas.map((vaga) => ({
+            empresa: vaga.nomeEmpresa || "Empresa não informada",
+            cargo: vaga.cargo || "Cargo não informado",
+            endereco: {
+              cep: vaga.cep?.trim() || "CEP não informado", // Adicionado `.trim()` para evitar espaços extras
+              rua: vaga.endereco || "Endereço não informado",
+              bairro: vaga.bairro || "Bairro não informado",
+              cidade: vaga.cidade || "Cidade não informada",
+              estado: vaga.estado || "Estado não informado",
+            },
+            email: vaga.emailEmpresa || "Email não informado",
+            imagem: vaga.imagem || "/placeholder.png",
+          }));
+
+          const vagasUnicas = [
+            ...new Map(
+              [...vagasDisponiveis, ...vagasCorrigidas].map((vaga) => [
+                JSON.stringify(vaga),
+                vaga,
+              ])
+            ).values(),
+          ];
+
+          setVagasDisponiveis(vagasUnicas);
+        }
+      } catch (error) {
+        console.error("Erro ao carregar vagas do localStorage:", error);
+      }
+    }
+  }, []); 
 
   return (
     <>
@@ -151,7 +192,7 @@ export default function VagasDisponiveis() {
               className='inline-block bg-white shadow-md p-5 m-5 rounded-lg w-[300px] h-[430px]'
             >
               <div
-                className={`flex items-center justify-center p-5 w-[80px] h-[80px] text-center cursor-pointer mx-auto`}
+                className='flex items-center justify-center p-5 w-[80px] h-[80px] text-center cursor-pointer mx-auto'
                 style={{
                   backgroundImage: `url(${vaga.imagem})`,
                   backgroundSize: "cover",
@@ -169,16 +210,24 @@ export default function VagasDisponiveis() {
               </div>
 
               <div className='boxEnderecoEmpresa'>
-                <p className='cepEmpresa'>{vaga.endereco.cep}</p>
                 <p className='enderecoEmpresa'>{vaga.endereco.rua}</p>
-                <p className='bairroEmpresa'>{vaga.endereco.bairro}</p>
-                <p className='cidadeEmpresa'>{vaga.endereco.cidade}</p>
-                <p className='estadoEmpresa'>{vaga.endereco.estado}</p>
+                <p className='bairroEmpresa'>Bairro: {vaga.endereco.bairro}</p>
+                <p className='cidadeEmpresa'>Cidade: {vaga.endereco.cidade}</p>
+                <p className='estadoEmpresa'>Estado: {vaga.endereco.estado}</p>
 
-                <p className='emailEmpresa'>{vaga.email}</p>
+                <p className='cepEmpresa'>
+                  CEP:{" "}
+                  {vaga.endereco.cep === "CEP não informado" ? (
+                    <span style={{ color: "red" }}>{vaga.endereco.cep}</span>
+                  ) : (
+                    vaga.endereco.cep
+                  )}
+                </p>
               </div>
+
+              <p className='emailEmpresa'>{vaga.email}</p>
               <div className='mt-auto'>
-               <BtnEuQuero />
+                <BtnEuQuero />
               </div>
             </div>
           ))}

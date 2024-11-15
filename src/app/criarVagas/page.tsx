@@ -129,6 +129,7 @@ export default function CriarVagas() {
       bairro,
       cidade,
       estado,
+      cep, // Adiciona o campo "cep" no objeto novaVaga
       emailEmpresa, // Adiciona o email no objeto novaVaga
       id,
       imagem: imageBackground,
@@ -139,6 +140,7 @@ export default function CriarVagas() {
     vagasExistentes.push(novaVaga);
     localStorage.setItem("vagas", JSON.stringify(vagasExistentes));
 
+    // Exibir no console as vagas, incluindo o novo campo "cep"
     console.log("Vagas criadas:", vagasExistentes);
 
     alert("Vaga criada com sucesso!");
