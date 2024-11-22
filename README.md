@@ -36,6 +36,25 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 - ![JavaScript](https://img.icons8.com/color/20/000000/javascript.png) JavaScript
 - ![TypeScript](https://img.icons8.com/color/20/000000/typescript.png) TypeScript
 - ![React](https://img.icons8.com/color/20/000000/react-native.png) React
+- ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+
+## 🔗 Links do Projeto
+
+### 🌐 Links Principais
+- [Homepage do Projeto](http://localhost:3000): Página inicial da aplicação.
+- [Documentação da API](https://viacep.com.br/): Informações detalhadas sobre como usar os endpoints da API.
+- [Repositório no GitHub](https://github.com/softexrecifepe/PI-RE9-TURMA-09-EQUIPE-05/tree/develop): Código-fonte e contribuições.
+
+### 🧭 Navegação Externa
+- **Sobre o projeto:** `/sobre` - Página sobre o projeto.
+- **Cadastro candidato:** `/cadastro` - Página de cadastro do candidato.
+- **Contato:** `/contato` - Página de contato.
+- **Login candidato:** `/user` - Página de login do candidato.
+
+### 🧭 Navegação Interna
+- **Como criar uma vaga:** `/vagas` - Página que mostra como criar uma vaga.
+- **Criar uma vaga:** `/criarVagas` - Página de criação da vaga.
+- **Vagas existentes:** `/vagasDisponiveis` - Página das vagas disponíveis.
 
 ## Como Contribuir
 
