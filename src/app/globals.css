@@ -1,0 +1,1365 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+/*Variáveis*/
+:root {
+  --cor-primaria: #ad0006;
+  --cor-destaque-titulo: #ff0009;
+  --cor-secundaria: #ff6166;
+  --cor-destaque: #ff9ea1;
+  --cor-destaque-principal: #3f3011;
+  --cor-destaque-principal-medial: #534527;
+  --cor-destaque-hover: #7a7262;
+  --cor-header: #fffaf1;
+  --cor-text: #f0f8ff;
+  --cor-verde: #51fc02;
+}
+
+/* Para navegadores modernos */
+* {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer e Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari e Opera */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: square;
+  /*user-select: none;*/
+  text-decoration: none !important;
+  list-style: none !important;
+  outline: none !important;
+}
+
+header {
+  background-color: var(--cor-header);
+  padding: 10px 50px; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5c1a0;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+h2 {
+  color: #ff6166;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p {
+  color: #3f3011;
+}
+
+.boxLog {
+  animation: rubberBand 1s ease-in-out infinite;
+  /* Aplicando a animação */
+}
+
+.logo {
+  color: var(--cor-destaque-titulo);
+  font-size: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: var(--cor-secundaria);
+}
+
+header i {
+  font-size: 1.5em;
+  color: var(--cor-destaque-principal-medial);
+  cursor: pointer;
+}
+
+header i:hover {
+  color: var(--cor-secundaria);
+}
+
+/*NAV
+_________________________________________________________*/
+
+.boxNav {
+  display: inline-flex;
+  
+}
+
+.boxNav ul {
+  list-style-type: none;
+  /* Remove as bolinhas da lista */
+  padding: 0;
+  /* Remove o padding da lista */
+}
+
+.boxNav ul li {
+  display: inline-block;
+  /* Use inline-block para permitir transformações */
+  margin-left: 20px;
+  letter-spacing: 2px;
+  color: #3f3011;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+  /* Transição suave para cor, movimento e sombra */
+}
+
+.boxNav ul li a {
+  text-decoration: none;
+  /* Remove o sublinhado do link */
+  display: block;
+  /* Faz o link ocupar toda a área do li */
+  transition: color 0.3s ease;
+  /* Transição para o link */
+}
+
+.boxNav ul li:hover {
+  color: var(--cor-secundaria);
+  transform: translateY(-5px);
+  /* Deslocamento suave no eixo Y */
+}
+
+/*HOME
+_____________________________________________________________________________________*/
+.boxPesquisa {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--cor-destaque-titulo);
+  color: #f0f8ff;
+  overflow-y: auto;
+}
+
+.boxPesquisa input {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+  color: aliceblue;
+  font-style: italic;
+  background: transparent;
+  font-size: 1em;
+}
+
+.boxPesquisa input::placeholder {
+  color: aliceblue;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  /* Sombra do texto do placeholder */
+}
+
+/* Aplicando a animação ao input quando estiver em foco */
+.boxPesquisa input:focus {
+  color: var(--cor-verde);
+  /* Mudança de cor do texto do input quando ativo */
+}
+
+/* Adicionando sombra ao texto do input quando ele não estiver vazio */
+.boxPesquisa input:not(:placeholder-shown) {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  /* Sombra do texto quando o input contém texto */
+}
+
+.btn {
+  background-color: var(--cor-primaria);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  padding: 20px auto;
+}
+
+.btn:hover {
+  background-color: var(--cor-destaque-titulo);
+}
+
+.btnText {
+  color: aliceblue;
+  font-size: 1.2em;
+}
+
+#lupa i {
+  color: aliceblue;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+/*LOGIN
+____________________________________________________________________________*/
+#loginImg {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 100px 50px;
+
+  background-image: url("/public/imagens/img21.png");
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Evita que a imagem se repita */
+  background-size: cover;
+  /* Faz com que a imagem cubra toda a área da página */
+  height: 100vh;
+  /* Garante que o body ocupe a altura total da viewport */
+  overflow: hidden;
+}
+
+.boxH3 {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+.cliqueAqui {
+  color: var(--cor-destaque-titulo);
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.cliqueAqui:hover {
+  color: var(--cor-verde);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.txtBranco {
+  color: black;
+  font-size: 700;
+}
+
+/*CONTAINER
+____________________________________________________________________________*/
+
+.container {
+  position: fixed;
+  top: 80px;
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--cor-background-container);
+  overflow-y: auto;
+}
+
+/*CADASTRO
+_____________________________________________________________________________*/
+.boxCadastro {
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--cor-destaque-titulo);
+  color: aliceblue;
+  overflow-y: auto;
+}
+
+.boxCadastro input {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+  color: aliceblue;
+  font-style: italic;
+  background: transparent;
+  font-size: 1em;
+}
+
+.boxCadastro input::placeholder {
+  color: aliceblue;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  /* Sombra do texto do placeholder */
+}
+
+/* Aplicando a animação ao input quando estiver em foco */
+.boxCadastro input:focus {
+  color: var(--cor-verde);
+  /* Mudança de cor do texto do input quando ativo */
+}
+
+/* Adicionando sombra ao texto do input quando ele não estiver vazio */
+.boxCadastro input:not(:placeholder-shown) {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  /* Sombra do texto quando o input contém texto */
+}
+
+.btnDownload {
+  background-color: var(--cor-destaque-pricipal);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  padding: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.btnDownload:hover {
+  background-color: var(--cor-destaque-pricipa-medial);
+}
+
+.btnDownload i {
+  color: aliceblue;
+  margin-right: 10px;
+}
+
+.boxSenha {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxSenha i {
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.boxSenha i:hover {
+  color: var(--cor-verde);
+}
+
+/*CONTAINER TEXT
+___________________________________________________________________________________*/
+#containerRow {
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 100px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    to top right,
+    #ff8b8b,
+    rgb(255, 245, 235),
+    rgb(255, 245, 235),
+    rgb(255, 246, 238),
+    rgb(255, 246, 238)
+  );
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Evita que a imagem se repita */
+  background-size: cover;
+  /* Faz com que a imagem cubra toda a área da página */
+  height: 100%;
+  /* Garante que o body ocupe a altura total da viewport */
+  overflow: hidden;
+}
+
+.boxRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.boxTxt {
+  width: 50%;
+  padding: 20px;
+  text-align: justify;
+  color: var(--cor-destaque-pricipal);
+}
+
+.boxImage {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxImage img {
+  width: 100%;
+}
+
+.boxImageCriarVagas {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxImageCriarVagas img {
+  width: 50%;
+}
+
+/*SOCIAL
+________________________________________________________________________________*/
+.boxTxtSocial {
+  width: 50%;
+  height: 100vh;
+  padding: 100px 20px;
+  text-align: justify;
+  color: var(--cor-destaque-pricipal);
+}
+
+.boxSocial {
+  width: 50%;
+  height: 100vh;
+  padding: 100px 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.social i {
+  font-size: 3em;
+  color: var(--cor-destaque-pricipal);
+  margin-right: 20px;
+  margin-top: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Transição suave para cor e movimento */
+  border-radius: 5px;
+}
+
+.social i:hover {
+  color: var(--cor-secundaria);
+  transform: translateY(-5px);
+  /* Deslocamento suave no eixo Y */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  /* Adiciona uma sombra suave */
+}
+
+/*VAGAS
+________________________________________________________________________________________*/
+
+#homeVagas {
+    width: 100%;
+    height: 100%;
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(to top right,
+            #ff8b8b,
+            #ff8b8b,
+            rgb(255, 246, 238));
+}
+
+.containerVagas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.boxVagas {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.boxVagas input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+
+
+/* Estilização do contêiner principal */
+.boxImgEmpresa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    background-color: var(--cor-destaque-pricipa-medial);
+    transition: border-color 0.3s ease;
+}
+
+.boxImgEmpresa i {
+    color: var(--cor-destaque-hover);
+    font-size: 40px;
+}
+
+/* Efeito de hover no contêiner */
+.boxImgEmpresa:hover {
+    border-color: var(--cor-destaque);
+    /* cor azul ao passar o mouse */
+}
+
+/* Estilização do ícone e texto */
+.labelImgEmpresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: var(--cor-destaque-hover);
+    cursor: pointer;
+}
+
+.labelImgEmpresa i {
+    font-size: 50px;
+    /* Tamanho do ícone */
+    color: var(--cor-destaque-hover);
+    /* Cor do ícone */
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.labelImgEmpresa span {
+    color: var(--cor-destaque-hover);
+}
+
+/* Efeito de hover no ícone e texto */
+.labelImgEmpresa:hover i {
+    color: var(--cor-destaque);
+}
+
+.labelImgEmpresa:hover span {
+    color: var(--cor-destaque);
+}
+
+/* Tornando o input invisível */
+.imagemEmpresa {
+    display: none;
+}
+
+
+/*INPUTS
+_____________________________________________________________________________________*/
+
+
+.boxEmpresa {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.nomeEmpresa {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nomeEmpresa::placeholder {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nomeCargo {
+    color: var(--cor-destaque-titulo);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.nomeCargo::placeholder {
+    color: var(--cor-destaque-titulo);
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.boxEnderecoEmpresa {
+    margin-top: 10px;
+    color: var(--cor-destaque-pricipal);
+}
+
+.cepEmpresa,
+.emailEmpresa,
+.bairroEmpresa,
+.cidadeEmpresa,
+.estadoEmpresa,
+.enderecoEmpresa {
+    font-size: 0.9em;
+    color: var(--cor-destaque-hover);
+}
+
+.cepEmpresa::placeholder .emailEmpresa::placeholder .bairroEmpresa::placeholder .cidadeEmpresa::placeholder .estadoEmpresa::placeholder .enderecoEmpresa::placeholder {
+    font-size: 0.9em;
+    color: var(--cor-destaque-pricipa-medial);
+}
+
+
+.boxbtnVagas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.btnVagas {
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 50px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.btnAncora:hover,
+.btnVagas:hover {
+    background-color: var(--cor-destaque-titulo);
+
+}
+
+
+/*ALERTA
+________________________________________________________________________________________*/
+
+.alerta {
+    background-color: aliceblue;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 20%;
+    /* Coloca o elemento a 50% da altura do container */
+    left: 10%;
+    /* Opcional: centraliza horizontalmente também */
+    transform: translate(-20%, -20%);
+    /* Ajusta o elemento para alinhar corretamente */
+
+}
+
+.alerta p {
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.btnOk {
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.btnOk:hover {
+    background-color: var(--cor-destaque-titulo);
+}
+
+
+
+/*TOGGLE CONTAINER ANIMADO
+______________________________________________________________________________________*/
+
+.toggleContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(../../public/imagens/img10.png);
+
+    overflow: hidden;
+    /* Para evitar que o conteúdo "vaze" quando fechado */
+    transition: width 0.5s ease;
+    /* Transição suave de largura */
+    z-index: 1;
+    /* Certifique-se de que esteja sobreposto aos outros elementos */
+}
+
+.toggleContainer ul {
+    margin: 150px 20px 0 0;
+}
+
+.toggleContainer ul li {
+    color: aliceblue;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.toggleContainer ul li:hover {
+    color: var(--cor-verde);
+}
+
+/*RESPONSIVIDADE
+__________________________________________________________*/
+
+@media all and (min-width: 902px) and (max-width: 1200px) {
+  .container {
+    width: 50%;
+  }
+
+  #containerRow {
+    padding: 100px 50px;
+  }
+
+  .boxRow {
+    flex-direction: column;
+  }
+
+  .boxTxt {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    color: var(--cor-destaque-pricipal);
+  }
+
+  .boxImage {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .boxImage img {
+    width: 50%;
+  }
+
+  .boxImageCriarVagas {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .boxImageCriarVagas img {
+    width: 50%;
+  }
+
+  .boxTxtSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 100px 20px;
+  }
+
+  .boxSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 50px 20px;
+  }
+}
+
+@media all and (min-width: 700px) and (max-width: 901px) {
+  /*____Toggle Animation______*/
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    /* Altura ajustada para acomodar três linhas com espaçamento */
+    cursor: pointer;
+    display: none;
+    /* Inicialmente escondido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cor-destaque-pricipal);
+    transition: transform 0.3s ease, top 0.3s ease, background-color 0.3s ease;
+    margin: auto;
+  }
+
+  .toggle span:nth-child(1) {
+    top: 0px;
+  }
+
+  .toggle span:nth-child(2) {
+    top: 10px;
+    /* Linha do meio */
+  }
+
+  .toggle span:nth-child(3) {
+    top: 20px;
+  }
+
+  /* Animação quando o toggle está ativo */
+  .toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    /* Linha de cima move-se para o meio */
+  }
+
+  .toggle.active span:nth-child(2) {
+    opacity: 0;
+    /* Oculta a linha do meio */
+  }
+
+  .toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 20px;
+    /* Linha de baixo move-se para o meio */
+  }
+
+  /* Cor vermelha no hover */
+  .toggle:hover span {
+    background-color: var(--cor-secundaria);
+  }
+
+  /*______Fim do Toggle Animation______*/
+
+  .boxNav {
+    display: none;
+  }
+
+  .container {
+    width: 60%;
+    height: 100%;
+  }
+
+  #containerRow {
+    padding: 100px 50px;
+  }
+
+  .boxRow {
+    flex-direction: column;
+  }
+
+  .boxTxt {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    color: var(--cor-destaque-pricipal);
+  }
+
+  .boxImage {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .boxImage img {
+    width: 70%;
+  }
+
+  .boxImageCriarVagas {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .boxImageCriarVagas img {
+    width: 50%;
+  }
+
+  .boxTxtSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 100px 20px;
+  }
+
+  .boxSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 50px 20px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 699px) {
+  /*____Toggle Animation______*/
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    /* Altura ajustada para acomodar três linhas com espaçamento */
+    cursor: pointer;
+    display: none;
+    /* Inicialmente escondido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cor-destaque-pricipal);
+    transition: transform 0.3s ease, top 0.3s ease, background-color 0.3s ease;
+    margin: auto;
+  }
+
+  .toggle span:nth-child(1) {
+    top: 0px;
+  }
+
+  .toggle span:nth-child(2) {
+    top: 10px;
+    /* Linha do meio */
+  }
+
+  .toggle span:nth-child(3) {
+    top: 20px;
+  }
+
+  /* Animação quando o toggle está ativo */
+  .toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    /* Linha de cima move-se para o meio */
+  }
+
+  .toggle.active span:nth-child(2) {
+    opacity: 0;
+    /* Oculta a linha do meio */
+  }
+
+  .toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 20px;
+    /* Linha de baixo move-se para o meio */
+  }
+
+  /* Cor vermelha no hover */
+  .toggle:hover span {
+    background-color: var(--cor-secundaria);
+  }
+
+  /*______Fim do Toggle Animation______*/
+
+  .boxNav {
+    display: none;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  #containerRow {
+    padding: 100px 20px;
+  }
+
+  .boxRow {
+    flex-direction: column;
+  }
+
+  .boxTxt {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    color: var(--cor-destaque-pricipal);
+  }
+
+  .boxImage {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .boxImage img {
+    width: 80%;
+  }
+
+  .boxImageCriarVagas {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .boxImageCriarVagas img {
+    width: 50%;
+  }
+
+  .boxTxtSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 100px 20px;
+  }
+
+  .boxSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 50px 20px;
+  }
+
+  .btnAncora {
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 499px) {
+  /*____Toggle Animation______*/
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    /* Altura ajustada para acomodar três linhas com espaçamento */
+    cursor: pointer;
+    display: none;
+    /* Inicialmente escondido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cor-destaque-pricipal);
+    transition: transform 0.3s ease, top 0.3s ease, background-color 0.3s ease;
+    margin: auto;
+  }
+
+  .toggle span:nth-child(1) {
+    top: 0px;
+  }
+
+  .toggle span:nth-child(2) {
+    top: 10px;
+    /* Linha do meio */
+  }
+
+  .toggle span:nth-child(3) {
+    top: 20px;
+  }
+
+  /* Animação quando o toggle está ativo */
+  .toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    /* Linha de cima move-se para o meio */
+  }
+
+  .toggle.active span:nth-child(2) {
+    opacity: 0;
+    /* Oculta a linha do meio */
+  }
+
+  .toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 20px;
+    /* Linha de baixo move-se para o meio */
+  }
+
+  /* Cor vermelha no hover */
+  .toggle:hover span {
+    background-color: var(--cor-secundaria);
+  }
+
+  /*______Fim do Toggle Animation______*/
+
+  .boxNav {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #containerRow {
+    padding: 100px 10px;
+  }
+
+  .boxRow {
+    flex-direction: column;
+  }
+
+  .boxTxt {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    color: var(--cor-destaque-pricipal);
+  }
+
+  .boxImage {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .boxImage img {
+    width: 100%;
+  }
+
+  .boxImageCriarVagas {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .boxImageCriarVagas img {
+    width: 100%;
+  }
+
+  #homeImg {
+    width: 100%;
+    padding: 100px 0px;
+    background-image: url("/public/imagens/img2.png");
+  }
+
+  #loginImg {
+    width: 100%;
+    padding: 100px 0px;
+    background-image: url("/public/imagens/img8.png");
+  }
+
+  #cadastroImg {
+    width: 100%;
+    padding: 100px 0px;
+    background-image: url("/public/imagens/img14.png");
+  }
+
+  .boxTxtSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 100px 20px;
+  }
+
+  .boxSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 50px 20px;
+  }
+
+  .alerta {
+    padding: 20px;
+  }
+
+  .alerta p {
+    font-size: 0.9em;
+  }
+
+  #homeVagas {
+    padding: 100px 0px;
+  }
+
+  .boxVagas {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .btnAncora {
+    width: 50%;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 299px) {
+  /*____Toggle Animation______*/
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    /* Altura ajustada para acomodar três linhas com espaçamento */
+    cursor: pointer;
+    display: none;
+    /* Inicialmente escondido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cor-destaque-pricipal);
+    transition: transform 0.3s ease, top 0.3s ease, background-color 0.3s ease;
+    margin: auto;
+  }
+
+  .toggle span:nth-child(1) {
+    top: 0px;
+  }
+
+  .toggle span:nth-child(2) {
+    top: 10px;
+    /* Linha do meio */
+  }
+
+  .toggle span:nth-child(3) {
+    top: 20px;
+  }
+
+  /* Animação quando o toggle está ativo */
+  .toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    /* Linha de cima move-se para o meio */
+  }
+
+  .toggle.active span:nth-child(2) {
+    opacity: 0;
+    /* Oculta a linha do meio */
+  }
+
+  .toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 20px;
+    /* Linha de baixo move-se para o meio */
+  }
+
+  /* Cor vermelha no hover */
+  .toggle:hover span {
+    background-color: var(--cor-secundaria);
+  }
+
+  /*______Fim do Toggle Animation______*/
+
+  .boxNav {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #containerRow {
+    padding: 100px 10px;
+  }
+
+  .boxRow {
+    flex-direction: column;
+  }
+
+  .boxTxt {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    color: var(--cor-destaque-pricipal);
+  }
+
+  .boxImage {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .boxImage img {
+    width: 100%;
+  }
+
+  .boxImageCriarVagas {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .boxImageCriarVagas img {
+    width: 100%;
+  }
+
+  .boxTxtSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 100px 20px;
+  }
+
+  .boxSocial {
+    width: 100%;
+    height: 50vh;
+    padding: 50px 20px;
+  }
+
+  .btnAncora {
+    width: 50%;
+  }
+
+  #homeImg {
+    width: 100%;
+    padding: 100px 0px;
+    background-image: url("/public/imagens/img1.png");
+  }
+
+  #loginImg {
+    width: 100%;
+    padding: 100px 0px;
+    background-image: url("/public/imagens/img7.png");
+  }
+
+  #cadastroImg {
+    width: 100%;
+    padding: 100px 0px;
+    background-image: url("/public/imagens/img13.png");
+  }
+
+  .alerta {
+    padding: 10px;
+  }
+
+  .alerta p {
+    font-size: 0.8em;
+  }
+
+  #homeVagas {
+    padding: 100px 0px;
+  }
+
+  .boxVagas {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  header {
+    padding: 10px 10px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}

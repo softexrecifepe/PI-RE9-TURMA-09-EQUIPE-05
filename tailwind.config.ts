@@ -28,8 +28,9 @@ const config: Config = {
         corDestaqueHover: "#7a7262",
         corHeader: "#fffaf1",
         corVerde: "#51fc02",
+        corVerdeMedio: "#27B500",
         corTextoBotao: "#f0f8ff",
-        corBordaHeader: "#e5c0a0"
+        corBordaHeader: "#e5c0a0"        
       },
     },
   },
