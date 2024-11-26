@@ -56,40 +56,40 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 - **Criar uma vaga:** `/criarVagas` - Página de criação da vaga.
 - **Vagas existentes:** `/vagasDisponiveis` - Página das vagas disponíveis.
 
-## Equipe
+## Equipe de Desenvolvimento
 
-### Integrantes
+### Integrantes 
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
-  <img src="" alt="Dayane Alves" style="border-radius: 50%; width: 100px; height: 100px;" />
-  <h3>Dayane Alves</h3>
-  <a href="https://github.com/n" target="_blank">
+<div style="background: linear-gradient(145deg, #4A90E2, #007AFF); border-radius: 10px; padding: 16px; text-align: center; width: 220px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); color: white; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; border: 1px solid white;">
+  <img src="" alt="Dayane Alves" style="border-radius: 50%; width: 100px; height: 100px; border: 2px solid white;" />
+  <h3 style="margin: 10px 0;">Dayane Alves</h3>
+  <a href="https://github.com/n" target="_blank" style="text-decoration: none; color: white;">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Dayane Alves">
   </a>
 </div>
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/134112848?v=4" alt="Maria Estelita" style="border-radius: 50%; width: 100px; height: 100px;" />
-  <h3>Maria Estelita</h3>
-  <a href="https://github.com/Estelita25" target="_blank">
+<div style="background: linear-gradient(145deg, #4A90E2, #007AFF); border-radius: 10px; padding: 16px; text-align: center; width: 220px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); color: white; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; border: 1px solid white;">
+  <img src="https://avatars.githubusercontent.com/u/134112848?v=4" alt="Maria Estelita" style="border-radius: 50%; width: 100px; height: 100px; border: 2px solid white;" />
+  <h3 style="margin: 10px 0;">Maria Estelita</h3>
+  <a href="https://github.com/Estelita25" target="_blank" style="text-decoration: none; color: white;">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Maria Estelita">
   </a>
 </div>
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/104791133?v=4" alt="Mahavidya" style="border-radius: 50%; width: 100px; height: 100px;" />
-  <h3>Mahavidya</h3>
-  <a href="https://github.com/VidyaDesign" target="_blank">
+<div style="background: linear-gradient(145deg, #4A90E2, #007AFF); border-radius: 10px; padding: 16px; text-align: center; width: 220px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); color: white; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; border: 1px solid white;">
+  <img src="https://avatars.githubusercontent.com/u/104791133?v=4" alt="Mahavidya" style="border-radius: 50%; width: 100px; height: 100px; border: 2px solid white;" />
+  <h3 style="margin: 10px 0;">Mahavidya</h3>
+  <a href="https://github.com/VidyaDesign" target="_blank" style="text-decoration: none; color: white;">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Mahavidya">
   </a>
 </div>
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/102621293?v=4" alt="Willian Gabriel" style="border-radius: 50%; width: 100px; height: 100px;" />
-  <h3>Willian Gabriel</h3>
-  <a href="https://github.com/williangabriell" target="_blank">
+<div style="background: linear-gradient(145deg, #4A90E2, #007AFF); border-radius: 10px; padding: 16px; text-align: center; width: 220px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); color: white; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; border: 1px solid white;">
+  <img src="https://avatars.githubusercontent.com/u/102621293?v=4" alt="Willian Gabriel" style="border-radius: 50%; width: 100px; height: 100px; border: 2px solid white;" />
+  <h3 style="margin: 10px 0;">Willian Gabriel</h3>
+  <a href="https://github.com/williangabriell" target="_blank" style="text-decoration: none; color: white;">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Willian Gabriel">
   </a>
 </div>
