@@ -4,7 +4,7 @@
 
 ## Descrição
 
-A aplicação tem como objetivo primordial disponibilizar aos usuários a possibilidade de contratar profissionais que residem próximos às vagas ofertadas, favorecendo tanto o trabalhador quanto o empregador, tendo em vista a economia de tempo e dinheiro. 
+A aplicação tem como objetivo primordial disponibilizar aos usuários a possibilidade de contratar profissionais que residem próximos às vagas ofertadas, favorecendo tanto o trabalhador quanto o empregador, tendo em vista a economia de tempo e dinheiro.
 
 É sabido que funcionários que moram próximos ao trabalho têm mais tempo para descanso e, assim, tendem a ser mais produtivos.
 
@@ -56,6 +56,60 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 - **Criar uma vaga:** `/criarVagas` - Página de criação da vaga.
 - **Vagas existentes:** `/vagasDisponiveis` - Página das vagas disponíveis.
 
+## Equipe de Desenvolvimento
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://avatars.githubusercontent.com/u/160778587?v=4">
+        <img src="https://avatars.githubusercontent.com/u/160778587?v=4" width="100" alt="Dayane Alves Profile Picture">
+      </a>
+      <br>
+      <sub><b>Dayane Alves</b></sub>
+      <br>
+      <a href="https://github.com/devalvesff00ff">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://avatars.githubusercontent.com/u/134112848?v=4">
+        <img src="https://avatars.githubusercontent.com/u/134112848?v=4" width="100" alt="Maria Estelita Profile Picture">
+      </a>
+      <br>
+      <sub><b>Maria Estelita</b></sub>
+      <br>
+      <a href="https://github.com/Estelita25">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://avatars.githubusercontent.com/u/104791133?v=4">
+        <img src="https://avatars.githubusercontent.com/u/104791133?v=4" width="100" alt="Mahavidya Profile Picturee">
+      </a>
+      <br>
+      <sub><b>Mahavidya</b></sub>
+      <br>
+      <a href="https://github.com/VidyaDesign">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://avatars.githubusercontent.com/u/102621293?v=4">
+        <img src="https://avatars.githubusercontent.com/u/102621293?v=4" width="100" alt="Willian Gabriel Profile Picture">
+      </a>
+      <br>
+      <sub><b>Willian Gabriel</b></sub>
+      <br>
+      <a href="https://github.com/williangabriell">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
 ## Como Contribuir
 
 1. Faça um fork deste repositório
@@ -70,9 +124,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 
 ---
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
@@ -84,7 +136,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
