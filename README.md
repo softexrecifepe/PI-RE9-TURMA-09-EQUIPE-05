@@ -61,7 +61,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
   <tr>
     <td align="center">
       <a href="https://avatars.githubusercontent.com/u/160778587?v=4">
-        <img src="https://avatars.githubusercontent.com/u/160778587?v=4" width="100" alt="Catarina Guimarães Profile Picture">
+        <img src="https://avatars.githubusercontent.com/u/160778587?v=4" width="100" alt="Dayane Alves Profile Picture">
       </a>
       <br>
       <sub><b>Dayane Alves</b></sub>
@@ -72,7 +72,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
     </td>
     <td align="center">
       <a href="https://avatars.githubusercontent.com/u/134112848?v=4">
-        <img src="https://avatars.githubusercontent.com/u/134112848?v=4" width="100" alt="Claúdio José Profile Picture">
+        <img src="https://avatars.githubusercontent.com/u/134112848?v=4" width="100" alt="Maria Estelita Profile Picture">
       </a>
       <br>
       <sub><b>Maria Estelita</b></sub>
@@ -83,7 +83,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
     </td>
     <td align="center">
       <a href="https://avatars.githubusercontent.com/u/104791133?v=4">
-        <img src="https://avatars.githubusercontent.com/u/104791133?v=4" width="100" alt="Fabyanna Moreira Profile Picture">
+        <img src="https://avatars.githubusercontent.com/u/104791133?v=4" width="100" alt="Mahavidya Profile Picturee">
       </a>
       <br>
       <sub><b>Mahavidya</b></sub>
@@ -94,7 +94,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
     </td>
      <td align="center">
       <a href="https://avatars.githubusercontent.com/u/102621293?v=4">
-        <img src="https://avatars.githubusercontent.com/u/102621293?v=4" width="100" alt="Fabyanna Moreira Profile Picture">
+        <img src="https://avatars.githubusercontent.com/u/102621293?v=4" width="100" alt="Willian Gabriel Profile Picture">
       </a>
       <br>
       <sub><b>Willian Gabriel</b></sub>
