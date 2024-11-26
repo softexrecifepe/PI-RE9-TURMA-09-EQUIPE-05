@@ -115,8 +115,8 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/163914578?v=4" width="100" alt="Claúdio José Profile Picture">
+      <a href="https://avatars.githubusercontent.com/u/134112848?v=4">
+        <img src="https://avatars.githubusercontent.com/u/134112848?v=4" width="100" alt="Claúdio José Profile Picture">
       </a>
       <br>
       <sub><b>Maria Estelita</b></sub>
@@ -126,8 +126,8 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/143666861?v=4" width="100" alt="Fabyanna Moreira Profile Picture">
+      <a href="https://avatars.githubusercontent.com/u/104791133?v=4">
+        <img src="https://avatars.githubusercontent.com/u/104791133?v=4" width="100" alt="Fabyanna Moreira Profile Picture">
       </a>
       <br>
       <sub><b>Mahavidya</b></sub>
