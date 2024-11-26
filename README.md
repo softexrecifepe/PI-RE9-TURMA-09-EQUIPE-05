@@ -58,21 +58,43 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 
 ## Equipe
 
-![Foto](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
-###Dayane Alves
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VidyaDesign)
+### Integrantes
 
-![Foto(caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
-###Maria Estelita
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VidyaDesign)
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
 
-![Foto](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
-###Mahavidya
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VidyaDesign)
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px;">
+  <img src="caminho/para/imagem_dayane.jpg" alt="Dayane Alves" style="border-radius: 50%; width: 100px; height: 100px;" />
+  <h3>Dayane Alves</h3>
+  <a href="https://github.com/VidyaDesign" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Dayane Alves">
+  </a>
+</div>
 
-![Foto](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
-### Willian Gabriel
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VidyaDesign)
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px;">
+  <img src="caminho/para/imagem_estelita.jpg" alt="Maria Estelita" style="border-radius: 50%; width: 100px; height: 100px;" />
+  <h3>Maria Estelita</h3>
+  <a href="https://github.com/VidyaDesign" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Maria Estelita">
+  </a>
+</div>
+
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px;">
+  <img src="caminho/para/imagem_mahavidya.jpg" alt="Mahavidya" style="border-radius: 50%; width: 100px; height: 100px;" />
+  <h3>Mahavidya</h3>
+  <a href="https://github.com/VidyaDesign" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Mahavidya">
+  </a>
+</div>
+
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px;">
+  <img src="caminho/para/imagem_willian.jpg" alt="Willian Gabriel" style="border-radius: 50%; width: 100px; height: 100px;" />
+  <h3>Willian Gabriel</h3>
+  <a href="https://github.com/VidyaDesign" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Willian Gabriel">
+  </a>
+</div>
+
+</div>
 
 ## Como Contribuir
 
@@ -100,3 +122,4 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
