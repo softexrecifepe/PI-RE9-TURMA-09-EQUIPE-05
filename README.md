@@ -63,7 +63,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;">
 
 <div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/134112848?v=4" alt="Dayane Alves" style="border-radius: 50%; width: 100px; height: 100px;" />
+  <img src="" alt="Dayane Alves" style="border-radius: 50%; width: 100px; height: 100px;" />
   <h3>Dayane Alves</h3>
   <a href="https://github.com/n" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Dayane Alves">
@@ -79,7 +79,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 </div>
 
 <div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/134112848?v=4" alt="Mahavidya" style="border-radius: 50%; width: 100px; height: 100px;" />
+  <img src="https://avatars.githubusercontent.com/u/104791133?v=4" alt="Mahavidya" style="border-radius: 50%; width: 100px; height: 100px;" />
   <h3>Mahavidya</h3>
   <a href="https://github.com/VidyaDesign" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Mahavidya">
