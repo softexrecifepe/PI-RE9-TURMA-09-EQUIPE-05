@@ -87,7 +87,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 </div>
 
 <div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
-  <img src="https://avatars.githubusercontent.com/u/102621293?v=4" alt="Willian Gabriel" style="border-radius: 50%; width: 50px; height: 50px;" />
+  <img src="https://avatars.githubusercontent.com/u/102621293?v=4" alt="Willian Gabriel" style="border-radius: 50%; width: 100px; height: 100px;" />
   <h3>Willian Gabriel</h3>
   <a href="https://github.com/williangabriell" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Willian Gabriel">
