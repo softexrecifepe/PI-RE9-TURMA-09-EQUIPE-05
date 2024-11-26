@@ -60,7 +60,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 
 ### Integrantes 
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
 
 <div style="background: linear-gradient(145deg, #4A90E2, #007AFF); border-radius: 10px; padding: 16px; text-align: center; width: 220px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); color: white; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; border: 1px solid white;">
    <img src="https://avatars.githubusercontent.com/u/160778587?v=4" alt="Maria Estelita" style="border-radius: 50%; width: 100px; height: 100px;" />
