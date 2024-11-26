@@ -40,7 +40,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
   
 ### Screenshot
 
-![Descrição da Imagem](public/imagens/home.png)
+![Descrição da Imagem](public/imagens/index.png)
 
 ## 🔗 Links do Projeto
 
