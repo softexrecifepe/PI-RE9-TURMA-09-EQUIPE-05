@@ -104,7 +104,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
       <sub><b>Willian Gabriel</b></sub>
       <br>
       <a href="https://github.com/williangabriell">
-        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link"  style="margin-top: 10px;">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
       </a>
     </td>
   </tr>
