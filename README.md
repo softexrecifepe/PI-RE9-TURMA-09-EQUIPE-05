@@ -58,19 +58,19 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 
 ## Equipe
 
-![Foto de Mahavidia](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
+![Foto](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
 ###Dayane Alves
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VidyaDesign)
 
-![Foto de Mahavidia](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
-###Maaria Estelita
+![Foto(caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
+###Maria Estelita
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VidyaDesign)
 
-![Foto de Mahavidia](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
+![Foto](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
 ###Mahavidya
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VidyaDesign)
 
-![Foto de Mahavidia](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
+![Foto](caminho/para/imagem.jpg) <!-- Substitua pelo caminho da imagem do integrante -->
 ### Willian Gabriel
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VidyaDesign)
 
