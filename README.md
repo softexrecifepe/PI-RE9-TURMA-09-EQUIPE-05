@@ -37,6 +37,10 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 - ![TypeScript](https://img.icons8.com/color/20/000000/typescript.png) TypeScript
 - ![React](https://img.icons8.com/color/20/000000/react-native.png) React
 - ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+  
+### Screenshot
+
+![Descrição da Imagem](public/imagens/index.png)
 
 ## 🔗 Links do Projeto
 
