@@ -40,7 +40,8 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
   
 ### Screenshot
 
-![image](https://github.com/user-attachments/assets/dbe7b22d-6dd6-4de4-81e6-449ac1a8dfe9)
+![Descrição da Imagem](public/imagens/home.png)
+
 ## 🔗 Links do Projeto
 
 ### 🌐 Links Principais
