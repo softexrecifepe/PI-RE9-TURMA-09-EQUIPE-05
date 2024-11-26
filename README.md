@@ -100,6 +100,88 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 
 </div>
 
+## Equipe
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/catarinaguimaraess/" >
+        <img src="https://avatars.githubusercontent.com/u/110750750?v=4" width="100" alt="Catarina Guimarães Profile Picture">
+      </a>
+      <br>
+      <sub><b>Dayane Alves</b></sub>
+      <br>
+      <a href="https://github.com/devalvesff00ff">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+      <br>
+      <a href="https://www.linkedin.com/in/catarinaguimaraess/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn link">
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://www.linkedin.com/in/cl%C3%A1udio-rodrigues-52275b251/" >
+        <img src="https://avatars.githubusercontent.com/u/163914578?v=4" width="100" alt="Claúdio José Profile Picture">
+      </a>
+      <br>
+      <sub><b>Maria Estelita</b></sub>
+      <br>
+      <a href="https://github.com/Estelita25">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+      <br>
+      <a href="https://www.linkedin.com/in/cl%C3%A1udio-rodrigues-52275b251/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn link">
+      </a>
+    </td>
+      <td align="center">
+      <a href="https://www.linkedin.com/in/fabyanna-moreira-733a7a244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " >
+        <img src="https://avatars.githubusercontent.com/u/143666861?v=4" width="100" alt="Fabyanna Moreira Profile Picture">
+      </a>
+      <br>
+      <sub><b>Mahavidya</b></sub>
+      <br>
+      <a href="https://github.com/VidyaDesign">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+      <br>
+      <a href="https://www.linkedin.com/in/fabyanna-moreira-733a7a244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn link">
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://www.linkedin.com/in/leandro-c-s/" >
+        <img src="https://avatars.githubusercontent.com/u/56963289?v=4" width="100" alt="Leandro Carvalho Profile Picture">
+      </a>
+      <br>
+      <sub><b>Willian Gabriel</b></sub>
+      <br>
+      <a href="https://github.com/williangabriell">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+      <br>
+      <a href="https://www.linkedin.com/in/leandro-c-s/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn link">
+      </a>
+    </td>
+      <td align="center">
+      <a href="https://www.linkedin.com/in/thiago-felipe-045827268/" >
+        <img src="https://avatars.githubusercontent.com/u/175509559?v=4" width="100" alt="Leandro Carvalho Profile Picture">
+      </a>
+      <br>
+      <sub><b>Thiago França</b></sub>
+      <br>
+      <a href="https://github.com/thiago-felipe-de-franca">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub link">
+      </a>
+      <br>
+      <a href="https://www.linkedin.com/in/thiago-felipe-045827268/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn link">
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 
 
 ## Como Contribuir
