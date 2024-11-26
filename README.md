@@ -79,7 +79,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 </div>
 
 <div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
-  <img src="C:\Users\studi\Documents\Arquivo Pessoal\Documentos pessoais\Foto 3x4" alt="Mahavidya" style="border-radius: 50%; width: 100px; height: 100px;" />
+  <img src="https://github.com/settings/profile" alt="Mahavidya" style="border-radius: 50%; width: 100px; height: 100px;" />
   <h3>Mahavidya</h3>
   <a href="https://github.com/VidyaDesign" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Mahavidya">
