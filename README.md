@@ -105,7 +105,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
   <tr>
     <td align="center">
       <a href="https://avatars.githubusercontent.com/u/160778587?v=4">
-        <img src="https://avatars.githubusercontent.com/u/110750750?v=4" width="100" alt="Catarina Guimarães Profile Picture">
+        <img src="https://avatars.githubusercontent.com/u/160778587?v=4" width="100" alt="Catarina Guimarães Profile Picture">
       </a>
       <br>
       <sub><b>Dayane Alves</b></sub>
