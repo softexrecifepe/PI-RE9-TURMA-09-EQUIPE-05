@@ -60,9 +60,9 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 
 ### Integrantes
 
-<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;">
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px;">
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
   <img src="caminho/para/imagem_dayane.jpg" alt="Dayane Alves" style="border-radius: 50%; width: 100px; height: 100px;" />
   <h3>Dayane Alves</h3>
   <a href="https://github.com/VidyaDesign" target="_blank">
@@ -70,7 +70,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
   </a>
 </div>
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px;">
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
   <img src="caminho/para/imagem_estelita.jpg" alt="Maria Estelita" style="border-radius: 50%; width: 100px; height: 100px;" />
   <h3>Maria Estelita</h3>
   <a href="https://github.com/VidyaDesign" target="_blank">
@@ -78,7 +78,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
   </a>
 </div>
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px;">
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
   <img src="caminho/para/imagem_mahavidya.jpg" alt="Mahavidya" style="border-radius: 50%; width: 100px; height: 100px;" />
   <h3>Mahavidya</h3>
   <a href="https://github.com/VidyaDesign" target="_blank">
@@ -86,7 +86,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
   </a>
 </div>
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px;">
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; width: 200px; margin: 10px;">
   <img src="caminho/para/imagem_willian.jpg" alt="Willian Gabriel" style="border-radius: 50%; width: 100px; height: 100px;" />
   <h3>Willian Gabriel</h3>
   <a href="https://github.com/VidyaDesign" target="_blank">
@@ -95,6 +95,7 @@ A aplicação tem como objetivo primordial disponibilizar aos usuários a possib
 </div>
 
 </div>
+
 
 ## Como Contribuir
 
